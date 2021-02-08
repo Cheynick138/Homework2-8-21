@@ -47,3 +47,25 @@ function promptUser(){
             name: "contributing",
             message: "Who are the contributors of this projects?"
         },
+{
+            type: "input",
+            name: "tests",
+            message: "Is there a test included?"
+        },
+        {
+            type: "input",
+            name: "questions",
+            message: "What do I do if I have an issue? "
+        },
+        {
+            type: "input",
+            name: "username",
+            message: "Please enter your GitHub username: "
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Please enter your email: "
+        }
+    ]);
+} 
