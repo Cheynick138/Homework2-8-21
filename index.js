@@ -78,3 +78,12 @@ function promptUser(){
         const generateContent = generateReadme(answers);
         // Write new README.md to dist directory
         await writeFileAsync('./dist/README.md', generateContent);
+
+// Async function using util.promisify 
+  async function init() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await promptUser();
+        const generateContent = generateReadme(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('./dist/README.md', generateContent);
